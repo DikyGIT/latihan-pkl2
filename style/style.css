@@ -73,17 +73,100 @@ body {
   text-align: center;
 }
 
-.box-about-col img {
+.box-about-col .about-image {
   border-radius: 10px;
   background-position: center;
   background-size: cover;
   width: 100%;
-  padding: 0 20px 20px 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .box-about p {
   text-align: justify;
   line-height: 32px;
+}
+
+.gallery {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/gallery/gallery-bg.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: rgba(255, 255, 255, 0.4);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery .row .col h1 {
+  padding-top: 30px;
+}
+
+.gallery .gallery-image {
+  width: 100%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.testimonial .row {
+  padding-top: 50px;
+}
+
+.testimonial .row .card {
+  border: none;
+  background: transparent;
+}
+
+.testimonial .card-img-top {
+  width: 125px;
+  height: 125px;
+  border-radius: 180px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial .card-text {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/contact/contact-bg.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+.contact h1 {
+  margin-top: 30px;
+}
+
+.contact form {
+  margin-bottom: 100px;
+}
+
+.contact input {
+  background: transparent;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  background-color: #192a56;
+}
+
+footer p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
@@ -111,12 +194,13 @@ body {
     color: rgba(255, 255, 255, 0.4);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding: 0;
+    padding: 70px 0 0 0;
     margin: 0;
   }
 
   .about {
     padding: 0;
+    height: 100%;
   }
 
   .box-about {
@@ -134,11 +218,29 @@ body {
     margin-bottom: 40px;
   }
 
-  .box-about p {
-    margin: 0 20px 0 20px;
-  }
-
   .box-about {
     padding: 0;
+  }
+
+  .box-about p {
+    margin-top: 20px;
+  }
+
+  .gallery {
+    height: 100%;
+  }
+
+  .gallery .gallery-image {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .testimonial .card {
+    margin-bottom: 20px;
+  }
+
+  .contact {
+    padding-top: 42px;
+    padding-bottom: 42px;
   }
 }
