@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -167,6 +171,37 @@ footer p {
   padding-top: 15px;
   padding-bottom: 15px;
   margin: 0;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .box-about p {
+    margin-top: -10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .navigation-bar .box-ul .box-li .box-a {
+    text-align: center;
+  }
+
+  .navigation-bar.muncul .box-ul .box-li .box-a {
+    text-align: center;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 80px;
+  }
+
+  .box-about-col h1 {
+    width: 350px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .box-about p {
+    margin-top: -110px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 768px) {
